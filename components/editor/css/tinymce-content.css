@@ -1,0 +1,238 @@
+@import url(//fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic);
+
+/**
+ * Основные стили
+ */
+body {
+    font-size: 13px;
+    line-height: 1.6em;
+    font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+/**
+ * Ссылки
+ */
+a {
+    color: #3f8ad7;
+    text-decoration: none;
+}
+a:hover {
+    color: #f00;
+}
+
+
+/**
+ * Параграф
+ */
+p {
+    margin: 0 0 15px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+/**
+ * Заголовки
+ */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.ls-heading {
+    margin: 0 0 15px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+h1, .h1 { font-size: 36px; }
+h2, .h2 { font-size: 30px; }
+h3, .h3 { font-size: 24px; }
+h4, .h4 { font-size: 18px; }
+h5, .h5 { font-size: 14px; }
+h6, .h6 { font-size: 12px; }
+
+/* Мелкий текст */
+h1 small, .h1 small,
+h2 small, .h2 small,
+h3 small, .h3 small,
+h4 small, .h4 small,
+h5 small, .h5 small,
+h6 small, .h6 small { font-size: 65%; color: #aaa; }
+
+
+/**
+ * Выделенный текст
+ */
+mark {
+    padding: 2px 3px;
+    background: #fcf8e3;
+}
+
+/**
+ * 
+ */
+blockquote {
+    margin: 0 0 15px;
+    padding: 10px 15px;
+    background: #fbfbfc;
+    color: #555;
+    border-left: 5px solid #EDEDF2;
+}
+
+.blockquote--reverse,
+blockquote.pull-right {
+    border-left: 5px solid #EDEDF2;
+    border-left: 0;
+    text-align: right;
+}
+
+blockquote footer,
+blockquote cite {
+    color: #aaa;
+}
+
+/**
+ * 
+ */
+address {
+    margin-bottom: 15px;
+    font-style: normal;
+}
+
+/**
+ * 
+ */
+abbr {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/**
+ * Списки
+ */
+ul, ol {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+ul ol, ol ul, ul ul, ol ol {
+    margin-bottom: 0;
+}
+
+/**
+ * Код
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+/* Строчный код */
+code {
+    padding: 2px 5px;
+    border-radius: 3px;
+    background: #f1f1f1;
+    color: #555;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* Блок кода */
+pre {
+    display: block;
+    padding: 15px;
+    font: normal 13px/1.5em;
+    margin: 0 0 15px;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    direction: ltr !important;
+}
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}
+.pre-scrollable {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+/* Тег kbd */
+kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #eee;
+    background-color: #333;
+    border-radius: 3px;
+}
+kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+/* Links */
+a { text-decoration: underline; }
+
+/* Code */
+pre {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/* Headers */
+h4 { font-size: 24px; margin-bottom: 7px; font-weight: bold; }
+h5 { font-size: 20px; margin-bottom: 7px; font-weight: bold; }
+h6 { font-size: 18px; margin-bottom: 7px; font-weight: bold; }
+
+
+/* Images */
+img[align="right"] { margin: 4px 0 5px 25px; }
+img[align="left"]  { margin: 4px 25px 10px 0; }
+img.image-center   { display: block; margin: 0 auto; }
+
+
+/* Responsive */
+object,
+iframe,
+img {
+    max-width: 100%;
+    border: none;
+}
+
+
+/* Lists */
+ul,
+ol { padding: 0 0 0 40px; }
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+dd { margin: 0 0 0 40px; }
+
+
+/* Tables */
+table    { border: 1px solid #e1e1e1; clear: both; }
+table td,
+table th { padding: 5px 10px; border: 1px solid #e1e1e1; }
+
+
+/* User */
+.ls-user {
+    font-weight: bold;
+    display: inline-block;
+}
+a.ls-user {
+    text-decoration: none;
+}

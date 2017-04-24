@@ -1,0 +1,157 @@
+/**
+ * Блок
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.ls-block {
+    overflow: hidden;
+    
+    background: #E6E5E0;
+}
+.ls-block + .ls-block {
+    margin-top: 40px;
+}
+.ls-block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+.ls-block .text-help {
+    font-size: 11px;
+    line-height: 14px;
+}
+.ls-block .ls-text {
+    font-size: 13px;
+    line-height: 18px;
+}
+.ls-block .max-height-200 {
+    overflow: auto;
+    max-height: 200px;
+    position: relative;
+}
+.ls-block h3 {
+    font-size: 16px;
+}
+
+/* Шапка */
+.ls-block-header {
+    padding: 7px 25px 9px;
+    position: relative;
+    background: #958b71;
+}
+.ls-block-header .ls-block-title {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 1em;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* Separator */
+
+
+.ls-block--has-tabs .ls-block-header {
+    padding-bottom: 9px;
+}
+.ls-block--has-tabs .ls-block-header:before {
+    display: none;
+}
+.ls-block--has-tabs .ls-block .ls-tab-list:before {
+    display: block;
+}
+
+/* Навигация */
+.ls-block .ls-tabs:not(:last-child) {
+    padding: 7px 25px 0;
+    margin-bottom: 10px;
+}
+.ls-block .ls-tab-list {
+    margin-bottom: 20px;
+    border: none;
+    font-size: 11px;
+    position: relative;
+}
+.ls-block .ls-tab-list .ls-tab {
+    margin-right: 10px;
+}
+.ls-block .ls-tab-list .ls-tab .ls-tab-inner {
+    border: 1px solid transparent;
+    line-height: 13px;
+    border-radius: 5px;
+    padding: 3px 6px 4px;
+    display: block;
+    color: #727a90;
+    text-decoration: none;
+}
+
+/* Hover */
+.ls-block .ls-tab-list .ls-tab .ls-tab-inner:hover,
+.ls-block .ls-tab-list .ls-tab:hover .ls-tab-inner {
+    color: #333;
+}
+
+/* Active */
+.ls-block .ls-tab-list .ls-tab.active .ls-tab-inner {
+    color: #628fa5;
+    border-color: #ebf0f4;
+    text-decoration: none;
+}
+.ls-block .ls-tab-list .ls-tab.active .ls-tab-inner:hover {
+    color: #333;
+}
+
+
+/* Контент */
+.ls-block-content {
+}
+
+/* Подвал */
+.ls-block-footer {
+    font-size: 11px;
+    color: #b9c2c2;
+}
+.ls-block-footer a {
+    color: #727a90;
+    text-decoration: underline;
+}
+.ls-block-footer .ls-search-form {
+    padding: 0;
+    margin: 5px 0;
+}
+
+/**
+ * Поддержка списков
+ */
+.ls-block .ls-item-group {
+    border: none;
+}
+.ls-block .ls-block-content + .ls-item-group {
+    border-top: 1px solid #eee;
+}
+
+/**
+ * @modifier nopadding Блок без отступов у контента
+ */
+.ls-block--nopadding .ls-block-content {
+    padding: 0;
+}
+
+/**
+ * @modifier transparent Блок без фона
+ */
+.ls-block--transparent {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.ls-block .ls-blankslate {
+    margin-bottom: 0;
+    padding: 10px;
+    background: #eafff8;
+    color: #555;
+    border-radius: 5px;
+    font-size: 11px;
+}
